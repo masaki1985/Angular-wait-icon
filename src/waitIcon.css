@@ -1,0 +1,28 @@
+#waitIcon {
+    margin-right: auto;             /*アイコンを左右中央に配置*/
+    margin-left: auto;              /*アイコンを左右中央に配置*/
+    margin-top: 200px;              /*アイコンの上マージン200px*/
+    width: 100px;                   /*アイコンの幅100px*/
+    height: 100px;                  /*アイコンの高さ100px*/
+    background-color: royalblue;  /*アイコンの色ロイヤルブルー*/
+    border-radius: 100%;            /*四角形の角を丸めて円形に加工*/
+    animation-name: frame;          /*キーフレーム定義名frame*/
+    animation-duration: 1s;         /*アニメーションの繰り返し間隔1秒*/
+    animation-timing-function: ease;        /*アニメーションのプロパティ変化ease*/
+    animation-iteration-count: infinite;    /*アニメーションの繰り返し回数無限*/
+}
+
+@keyframes frame {                  /*キーフレーム定義*/
+    0% {    /*時間経過0%*/
+        transform: scale(0.2);      /*アイコンサイズ20%*/
+        opacity: 1;                 /*全く透過しない*/
+    }
+    30% {   /*時間経過30%*/
+        transform: scale(0.15);     /*アイコンサイズ15%*/
+        opacity: 1;                 /*全く透過しない*/
+    }
+    100% {  /*時間経過100%*/
+        transform: scale(1);        /*アイコンサイズ100%*/
+        opacity: 1;                 /*完全に透明*/
+    }
+}
